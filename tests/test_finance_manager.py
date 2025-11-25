@@ -104,5 +104,26 @@ class TestBankAccountExpanded(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.acc_uah.transfer("Not An Account Object", 100)
 
+    # === Блок 6: Відсотки та Історія (3 тести) ===
+    def test_apply_interest(self):
+        self.acc_uah.apply_interest(10) # 10%
+        self.assertEqual(self.acc_uah.balance, 1100.0)
+
+    def test_apply_interest_invalid(self):
+        with self.assertRaises(ValueError):
+            self.acc_uah.apply_interest(-5)
+
+    def test_transaction_history_logging(self):
+        self.acc_uah.deposit(500)
+        self.acc_uah.withdraw(200)
+        history = self.acc_uah.get_history()
+        
+        # Очікуємо 3 записи: створення, поповнення, зняття
+        self.assertEqual(len(history), 3)
+        self.assertEqual(history[1]['action'], "Поповнення")
+        self.assertEqual(history[1]['amount'], 500)
+        self.assertEqual(history[2]['action'], "Зняття")
+
+
 if __name__ == '__main__':
     unittest.main()

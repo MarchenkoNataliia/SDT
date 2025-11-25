@@ -44,5 +44,25 @@ class TestBankAccountExpanded(unittest.TestCase):
         with self.assertRaises(PermissionError):
             self.acc_uah.deposit(100)
 
+    # === Блок 3: Зняття (Withdraw) (4 тести) ===
+    def test_withdraw_success(self):
+        self.acc_uah.withdraw(200)
+        self.assertEqual(self.acc_uah.balance, 800.0)
+
+    def test_withdraw_insufficient_funds(self):
+        with self.assertRaises(ValueError):
+            self.acc_uah.withdraw(2000)
+
+    def test_withdraw_negative(self):
+        with self.assertRaises(ValueError):
+            self.acc_uah.withdraw(-100)
+
+    def test_withdraw_frozen_account(self):
+        self.acc_uah.freeze_account()
+        with self.assertRaises(PermissionError):
+            self.acc_uah.withdraw(100)
+
+    
+
 if __name__ == '__main__':
     unittest.main()

@@ -25,6 +25,24 @@ class TestBankAccountExpanded(unittest.TestCase):
     def test_str_representation(self):
         expected = "Рахунок: User UAH | Баланс: 1000.0 UAH | Статус: Активний"
         self.assertEqual(str(self.acc_uah), expected)
+        
+    # === Блок 2: Поповнення (Deposit) (4 тести) ===
+    def test_deposit_success(self):
+        self.acc_uah.deposit(500)
+        self.assertEqual(self.acc_uah.balance, 1500.0)
+
+    def test_deposit_negative_amount(self):
+        with self.assertRaises(ValueError):
+            self.acc_uah.deposit(-50)
+
+    def test_deposit_zero_amount(self):
+        with self.assertRaises(ValueError):
+            self.acc_uah.deposit(0)
+
+    def test_deposit_frozen_account(self):
+        self.acc_uah.freeze_account()
+        with self.assertRaises(PermissionError):
+            self.acc_uah.deposit(100)
 
 if __name__ == '__main__':
     unittest.main()

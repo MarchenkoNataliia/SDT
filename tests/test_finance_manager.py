@@ -76,5 +76,33 @@ class TestBankAccountExpanded(unittest.TestCase):
         self.acc_uah.deposit(100)
         self.assertEqual(self.acc_uah.balance, 1100.0)
 
+    # === Блок 5: Перекази (Transfer) (5 тестів) ===
+    def test_transfer_success(self):
+        receiver = BankAccount("Receiver", 0.0, "UAH")
+        self.acc_uah.transfer(receiver, 300.0)
+        self.assertEqual(self.acc_uah.balance, 700.0)
+        self.assertEqual(receiver.balance, 300.0)
+
+    def test_transfer_insufficient_funds(self):
+        receiver = BankAccount("Receiver", 0.0, "UAH")
+        with self.assertRaises(ValueError):
+            self.acc_uah.transfer(receiver, 5000.0)
+
+    def test_transfer_different_currencies(self):
+        with self.assertRaises(ValueError):
+            self.acc_uah.transfer(self.acc_usd, 100.0)
+
+    def test_transfer_to_frozen_account(self):
+        receiver = BankAccount("Receiver", 0.0, "UAH")
+        receiver.freeze_account()
+        # Гроші не мають зникнути з рахунку відправника, якщо отримувач заморожений
+        with self.assertRaises(PermissionError):
+            self.acc_uah.transfer(receiver, 100.0)
+        self.assertEqual(self.acc_uah.balance, 1000.0) # Баланс не змінився
+
+    def test_transfer_invalid_type(self):
+        with self.assertRaises(TypeError):
+            self.acc_uah.transfer("Not An Account Object", 100)
+
 if __name__ == '__main__':
     unittest.main()

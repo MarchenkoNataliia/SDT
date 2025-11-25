@@ -62,7 +62,19 @@ class TestBankAccountExpanded(unittest.TestCase):
         with self.assertRaises(PermissionError):
             self.acc_uah.withdraw(100)
 
-    
+    # === Блок 4: Управління статусом (Freeze/Unfreeze) (2 тести) ===
+    def test_freeze_account(self):
+        self.acc_uah.freeze_account()
+        self.assertTrue(self.acc_uah.is_frozen)
+        self.assertIn("Заморожено", str(self.acc_uah))
+
+    def test_unfreeze_account(self):
+        self.acc_uah.freeze_account()
+        self.acc_uah.unfreeze_account()
+        self.assertFalse(self.acc_uah.is_frozen)
+        # Перевіряємо, що після розморозки можна проводити операції
+        self.acc_uah.deposit(100)
+        self.assertEqual(self.acc_uah.balance, 1100.0)
 
 if __name__ == '__main__':
     unittest.main()

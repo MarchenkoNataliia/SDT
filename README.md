@@ -64,3 +64,8 @@ python -m unittest discover tests
 ```bash
 python -m unittest discover tests -v
 ```
+## 📚 Documentation
+
+Повна документація коду генерується автоматично за допомогою Doxygen та GitHub Actions.
+
+👉 **[Переглянути документацію проєкту](https://marchenkonataliia.github.io/SDT/index.html)**

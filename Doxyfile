@@ -1,5 +1,5 @@
 # Вкажіть назву вашого проєкту
-PROJECT_NAME           = "Python Validator Docs"
+PROJECT_NAME           = "Finance Manager"
 
 # Вкажіть Doxygen шукати файли в поточній папці
 INPUT                  = .

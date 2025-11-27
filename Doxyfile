@@ -5,7 +5,7 @@ PROJECT_NAME           = "Finance Manager"
 INPUT                  = .
 
 # Вкажіть, що шукати потрібно файли з розширенням .py
-FILE_PATTERNS          = *.py
+FILE_PATTERNS          = *.py *.md
 
 # Вкажіть Doxygen шукати файли рекурсивно (у всіх підпапках)
 RECURSIVE              = YES
@@ -22,3 +22,5 @@ PYTHON_DOCSTRING       = NO
 
 # Куди складати згенерований HTML
 OUTPUT_DIRECTORY       = docs_doxygen
+
+USE_MDFILE_AS_MAINPAGE = README.md

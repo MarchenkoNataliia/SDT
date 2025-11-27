@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['test_5fapply_5finterest_0',['test_apply_interest',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a23201dde151f5376fa472ee817bbf5a5',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fapply_5finterest_5finvalid_1',['test_apply_interest_invalid',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a0d6e92dab9ba681cdc6583f27636ed91',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fdeposit_5ffrozen_5faccount_2',['test_deposit_frozen_account',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#ad964a0ba4dc9255dc179240f8c6f21d8',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fdeposit_5fnegative_5famount_3',['test_deposit_negative_amount',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#aa23950662791e707dcbf00bf2b6d506a',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fdeposit_5fsuccess_4',['test_deposit_success',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a3bca30f2e8a959922a2315c2e54a9c2a',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fdeposit_5fzero_5famount_5',['test_deposit_zero_amount',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a1b833118d40bf588dadfa4b9e6f16001',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ffreeze_5faccount_6',['test_freeze_account',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a31e01f0ca4b6ec34aac3a95759037b2d',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5finit_5fcorrect_7',['test_init_correct',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#adda8c5bebe30b387e8d6da45b95b0dd5',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5finit_5fnegative_5fbalance_8',['test_init_negative_balance',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a85b0ac953ac4071f3f0ea94e2210a4a2',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fstr_5frepresentation_9',['test_str_representation',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a82698bfc5239ce764c9a23b310a37013',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ftransaction_5fhistory_5flogging_10',['test_transaction_history_logging',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a237fe1cbd7030941a2814cba94e6cdd4',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ftransfer_5fdifferent_5fcurrencies_11',['test_transfer_different_currencies',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#ad8ee80e037838ca4131b75c75ecd4471',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ftransfer_5finsufficient_5ffunds_12',['test_transfer_insufficient_funds',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#ac7ebfd507498de2bfb345f917aa2ec5d',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ftransfer_5finvalid_5ftype_13',['test_transfer_invalid_type',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#aaa7d7483ab49cd29209976ace1abbb32',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ftransfer_5fsuccess_14',['test_transfer_success',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#aa9636e2fc8459d49f97527d1647e679d',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5ftransfer_5fto_5ffrozen_5faccount_15',['test_transfer_to_frozen_account',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a557a8aee45f2fb2e6e18d187e3ed0f06',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5funfreeze_5faccount_16',['test_unfreeze_account',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a1beffb104acdd337fc94be2431127f43',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fwithdraw_5ffrozen_5faccount_17',['test_withdraw_frozen_account',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#acbd1dc5660e0c3b1bb3cccb8a060d671',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fwithdraw_5finsufficient_5ffunds_18',['test_withdraw_insufficient_funds',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a1bde1cef428cd344be90363d5fd339e0',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fwithdraw_5fnegative_19',['test_withdraw_negative',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#ac149b51bc6288fdcc4a1fe95a9dd91a6',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['test_5fwithdraw_5fsuccess_20',['test_withdraw_success',['../classtest__finance__manager_1_1TestBankAccountExpanded.html#a533f6d1cd364aa4981516d6d3d93d013',1,'test_finance_manager::TestBankAccountExpanded']]],
+  ['transfer_21',['transfer',['../classfinance__manager_1_1BankAccount.html#abe17b59c8575216c1ada30d2b5b9e618',1,'finance_manager::BankAccount']]]
+];

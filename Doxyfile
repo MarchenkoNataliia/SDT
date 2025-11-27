@@ -1,0 +1,12 @@
+PROJECT_NAME           = "Finance Manager"
+PROJECT_BRIEF          = "Lab Work 2: Python Bank Account Manager"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = .
+RECURSIVE              = YES
+FILE_PATTERNS          = *.py
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+# Налаштування для Python, щоб Doxygen розумів код краще
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
